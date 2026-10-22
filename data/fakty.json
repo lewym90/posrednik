@@ -1,0 +1,177 @@
+{
+ "asOf": "wrzesień 2026 (stan prawny kursu)",
+ "note": "Poziomy: A – potwierdzone w dwóch niezależnych publikacjach i zgodne z kursem; B – kurs + jedna publikacja zewnętrzna; C – tylko kurs (zweryfikuj przed użyciem). Uwaga: strony urzędowe (ISAP, gov.pl) były niedostępne w moim środowisku, więc zewnętrzne źródła to publikacje branżowe i serwisy prawne – w razie wątpliwości sprawdź tekst aktu w ISAP.",
+ "groups": [
+  {
+   "title": "Podatki i opłaty przy transakcji",
+   "items": [
+    {
+     "l": "PCC przy zakupie na rynku wtórnym",
+     "v": "2% wartości rynkowej",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 17.3",
+     "ch": 17,
+     "sec": "17.3",
+     "note": "Płaci kupujący. Zwolnienie przy pierwszym mieszkaniu lub domu od 31.08.2023 (art. 9 pkt 17 u.p.c.c.); dopuszczalny wcześniejszy udział do 50% nabyty ze spadku. Uzupełnienie względem kursu: wyrok NSA z 7.04.2026 (III FSK 281/25) – przy zakupie przez kilka osób zwolnienie może przysługiwać proporcjonalnie do udziału osoby spełniającej warunki.",
+     "srcs": [
+      {
+       "n": "Infor – PCC, rynek wtórny",
+       "u": "https://www.infor.pl/twoje-pieniadze/podatki/7627213,0-pcc-przy-zakupie-nieruchomosci-z-rynku-wtornego-te-przepisy-juz-obowiazuja-i-jest-tylko-jeden-warunek.html"
+      },
+      {
+       "n": "Prawo.pl – zwolnienie z PCC",
+       "u": "https://www.prawo.pl/podatki/zwolnienie-z-pcc-na-pierwsze-mieszkanie-takze-dla-partnerow,1543476.html"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "Podatek od sprzedaży (PIT-39)",
+     "v": "19% dochodu; bez podatku po 5 latach liczonych od końca roku nabycia",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 17.5",
+     "ch": 17,
+     "sec": "17.5",
+     "srcs": [
+      {
+       "n": "Rankomat – podatek od sprzedaży nieruchomości",
+       "u": "https://rankomat.pl/finanse/poradniki/podatek-od-sprzedazy-nieruchomosci/"
+      },
+      {
+       "n": "PewnyLokal – sprzedaż po 5 latach",
+       "u": "https://pewnylokal.pl/sprzedaz-mieszkania-po-pieciu-latach-a-podatek-dochodowy"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Rozliczenie w PIT-39 do 30 kwietnia roku następnego. Ulga mieszkaniowa: wydatki na własne cele mieszkaniowe w ciągu 3 lat od końca roku sprzedaży."
+    },
+    {
+     "l": "Maksymalna taksa notarialna: 60 tys.–1 mln zł",
+     "v": "1 010 zł + 0,4% nadwyżki ponad 60 000 zł (+23% VAT)",
+     "lvl": "B",
+     "ref": "Kurs, rozdz. 17.9; rozp. MS z 28.06.2004",
+     "ch": 17,
+     "sec": "17.9",
+     "srcs": [
+      {
+       "n": "Rzeczpospolita – taksa notarialna, tekst ujednolicony",
+       "u": "https://www.rp.pl/ekonomia/art8540751-taksa-notarialna-tekst-ujednolicony"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Źródło zewnętrzne to tekst rozporządzenia ujednolicony w 2007 r. – stawki z § 3 zgodne z tabelą w kursie. Dla czynności między osobami z I grupy podatkowej, powyżej 2 mln zł: maks. 7 500 zł; inaczej 10 000 zł. Dla części czynności obowiązują obniżone stawki (np. działka budowlana – połowa) – sprawdź w rozporządzeniu."
+    },
+    {
+     "l": "Opłata sądowa za wpis własności lub hipoteki",
+     "v": "200 zł",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 17.9",
+     "ch": 17,
+     "sec": "17.9"
+    },
+    {
+     "l": "Zwolnienie z podatku od spadków i darowizn (grupa 0)",
+     "v": "po zgłoszeniu SD-Z2 w ciągu 6 miesięcy",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 17.7",
+     "ch": 17,
+     "sec": "17.7"
+    },
+    {
+     "l": "VAT – rynek pierwotny, lokal mieszkalny",
+     "v": "8% (do 150 m²; dom do 300 m²)",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 17.4",
+     "ch": 17,
+     "sec": "17.4"
+    }
+   ]
+  },
+  {
+   "title": "Własna działalność",
+   "items": [
+    {
+     "l": "VAT od usług pośrednictwa",
+     "v": "23%",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 4.6",
+     "ch": 4,
+     "sec": "4.6",
+     "note": "Stawka podstawowa; kurs nie zawiera wyjątku dla pośrednictwa."
+    },
+    {
+     "l": "Zwolnienie podmiotowe z VAT",
+     "v": "do 240 000 zł sprzedaży rocznie (od 2026 r.)",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 4.6",
+     "ch": 4,
+     "sec": "4.6",
+     "srcs": [
+      {
+       "n": "Poradnik Przedsiębiorcy – limit VAT",
+       "u": "https://poradnikprzedsiebiorcy.pl/-limit-zwolnienia-podmiotowego-w-vat"
+      },
+      {
+       "n": "EY – zwolnienie z VAT",
+       "u": "https://www.ey.com/pl_pl/insights/tax/podatki-posrednie-vat-akcyza-clo/zwolnienie-z-vat-komu-przysluguje"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Limit 240 000 zł (art. 113 ust. 1 ustawy o VAT) obowiązuje od 1.01.2026; wcześniej 200 000 zł. Żadne ze sprawdzonych źródeł nie wymienia pośrednictwa w obrocie nieruchomościami wśród usług wyłączonych (prawnicze, doradcze, jubilerskie, windykacja), ale tego wprost nie potwierdziły – zweryfikuj w art. 113 ust. 13."
+    },
+    {
+     "l": "Ryczałt ewidencjonowany – pośrednictwo",
+     "v": "15%",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 4.8",
+     "ch": 4,
+     "sec": "4.8"
+    },
+    {
+     "l": "Działalność nierejestrowana – limit przychodu",
+     "v": "225% minimalnego wynagrodzenia na kwartał (2026: 10 813,50 zł)",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 4.1",
+     "ch": 4,
+     "sec": "4.1",
+     "srcs": [
+      {
+       "n": "money.pl – działalność nierejestrowana",
+       "u": "https://direct.money.pl/artykuly/porady/dzialalnosc-nierejestrowana-2026-limit-10-813,50-zl,-po-przekroczeniu-7-dni-na-ceidg"
+      },
+      {
+       "n": "Poradnik Przedsiębiorcy – limit nierejestrowanej",
+       "u": "https://poradnikprzedsiebiorcy.pl/-limit-przychodu-dla-dzialalnosci-nierejestrowanej"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Art. 5 ust. 1 Prawa przedsiębiorców; płaca minimalna 2026 = 4 806 zł (225% = 10 813,50 zł). Po przekroczeniu limitu: działalność gospodarcza od dnia przekroczenia, rejestracja w CEIDG w ciągu 7 dni. Warunek: brak działalności zarejestrowanej w ciągu ostatnich 60 miesięcy."
+    },
+    {
+     "l": "Obowiązkowe OC pośrednika",
+     "v": "min. równowartość 25 000 euro",
+     "lvl": "B",
+     "ref": "Kurs, rozdz. 2.6; rozp. MF z 13.12.2013",
+     "ch": 2,
+     "sec": "2.6",
+     "srcs": [
+      {
+       "n": "Rozp. MF z 13.12.2013 (Dz.U. 2013 poz. 1626) – tekst w serwisie Infor",
+       "u": "https://www.infor.pl/akt-prawny/DZU.2013.241.0001626,rozporzadzenie-ministra-finansow-w-sprawie-obowiazkowego-ubezpieczenia-odpowiedzialnosci-cywilnej-posrednika-w-obrocie-nieruchomosciami.html"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "§ 4 rozporządzenia: min. 25 000 euro dla jednego zdarzenia i łącznie dla wszystkich zdarzeń w okresie ubezpieczenia (do 12 miesięcy); przeliczenie po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy."
+    },
+    {
+     "l": "Licencja zawodowa",
+     "v": "nie jest wymagana przez prawo od 1.01.2014",
+     "lvl": "C",
+     "ref": "Kurs, rozdz. 2.6",
+     "ch": 2,
+     "sec": "2.6"
+    }
+   ]
+  }
+ ]
+}

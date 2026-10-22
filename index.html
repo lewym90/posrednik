@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Akademia Pośrednika</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Kurs i baza wiedzy dla pośrednika w obrocie nieruchomościami: przepisy, stawki, quizy, kalkulatory i droga do otwarcia biura.">
+<meta name="theme-color" content="#EEF1F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1522" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Pośrednik">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/literata-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+<script>
+  // motyw ustawiany przed pierwszym malowaniem, żeby nie było błysku
+  try {
+    var s = JSON.parse(localStorage.getItem('ap.v1') || '{}');
+    if (s.theme === 'light' || s.theme === 'dark') document.documentElement.dataset.theme = s.theme;
+    if (s.fontScale) document.documentElement.style.setProperty('--fs', s.fontScale);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<div id="app" class="shell">
+  <nav class="rail" id="nav" aria-label="Główna nawigacja"></nav>
+  <div class="stage">
+    <header class="topbar" id="topbar"></header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<div id="overlay" class="overlay" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">Ta aplikacja wymaga włączonej obsługi JavaScript.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
