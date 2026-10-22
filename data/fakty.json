@@ -12,7 +12,7 @@
      "ref": "Kurs, rozdz. 17.3",
      "ch": 17,
      "sec": "17.3",
-     "note": "Płaci kupujący. Zwolnienie przy pierwszym mieszkaniu lub domu od 31.08.2023 (art. 9 pkt 17 u.p.c.c.); dopuszczalny wcześniejszy udział do 50% nabyty ze spadku. Uzupełnienie względem kursu: wyrok NSA z 7.04.2026 (III FSK 281/25) – przy zakupie przez kilka osób zwolnienie może przysługiwać proporcjonalnie do udziału osoby spełniającej warunki.",
+     "note": "Płaci kupujący. Zwolnienie przy pierwszym mieszkaniu lub domu od 31.08.2023 (art. 9 pkt 17 u.p.c.c.); dopuszczalny wcześniejszy udział do 50% nabyty ze spadku. Uzupełnienie względem kursu: wyrok NSA z 7.04.2026 (III FSK 281/25) – przy zakupie przez kilka osób zwolnienie może przysługiwać proporcjonalnie do udziału osoby spełniającej warunki. Termin: deklaracja i zapłata w 14 dni od powstania obowiązku (art. 10 ust. 1), chyba że podatek pobiera notariusz.",
      "srcs": [
       {
        "n": "Infor – PCC, rynek wtórny",
@@ -21,6 +21,10 @@
       {
        "n": "Prawo.pl – zwolnienie z PCC",
        "u": "https://www.prawo.pl/podatki/zwolnienie-z-pcc-na-pierwsze-mieszkanie-takze-dla-partnerow,1543476.html"
+      },
+      {
+       "n": "Tekst ustawy w rejestrze ELI (art. 4, 7, 9 pkt 17, 10)",
+       "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/191/text.pdf"
       }
      ],
      "checked": "22.10.2026"
@@ -64,10 +68,22 @@
     {
      "l": "Opłata sądowa za wpis własności lub hipoteki",
      "v": "200 zł",
-     "lvl": "C",
+     "lvl": "A",
      "ref": "Kurs, rozdz. 17.9",
      "ch": 17,
-     "sec": "17.9"
+     "sec": "17.9",
+     "srcs": [
+      {
+       "n": "Art. 42 ustawy o kosztach sądowych (LexLege)",
+       "u": "https://lexlege.pl/ustawa-o-kosztach-sadowych-w-sprawach-cywilnych/art-42/"
+      },
+      {
+       "n": "Art. 43 ustawy o kosztach sądowych (LexLege)",
+       "u": "https://lexlege.pl/ustawa-o-kosztach-sadowych-w-sprawach-cywilnych/art-43/"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Art. 42 ust. 1 – 200 zł (własność, użytkowanie wieczyste, ograniczone prawa rzeczowe, w tym hipoteka); 150 zł – dziedziczenie, dział spadku, zniesienie współwłasności i prawa osobiste/roszczenia (art. 42 ust. 3, art. 43)."
     },
     {
      "l": "Zwolnienie z podatku od spadków i darowizn (grupa 0)",
@@ -84,6 +100,22 @@
      "ref": "Kurs, rozdz. 17.4",
      "ch": 17,
      "sec": "17.4"
+    },
+    {
+     "l": "Opłaty za odpisy z księgi wieczystej (wniosek elektroniczny)",
+     "v": "odpis zwykły 30 zł, zupełny 75 zł, wyciąg od 10 zł",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 10.5",
+     "ch": 10,
+     "sec": "10.5",
+     "note": "Od 31.03.2026; w książce także stawki dla wniosku papierowego.",
+     "srcs": [
+      {
+       "n": "Ministerstwo Sprawiedliwości – opłaty",
+       "u": "https://www.gov.pl/web/sprawiedliwosc/oplaty"
+      }
+     ],
+     "checked": "22.10.2026"
     }
    ]
   },
@@ -122,10 +154,22 @@
     {
      "l": "Ryczałt ewidencjonowany – pośrednictwo",
      "v": "15%",
-     "lvl": "C",
+     "lvl": "A",
      "ref": "Kurs, rozdz. 4.8",
      "ch": 4,
-     "sec": "4.8"
+     "sec": "4.8",
+     "srcs": [
+      {
+       "n": "Tekst ustawy w rejestrze ELI (art. 12 ust. 1 pkt 2 lit. k)",
+       "u": "https://api.sejm.gov.pl/eli/acts/DU/2025/843/text.pdf"
+      },
+      {
+       "n": "Poradnik Przedsiębiorcy – stawka ryczałtu",
+       "u": "https://poradnikprzedsiebiorcy.pl/-uslugi-posrednictwa-w-sprzedazy-nieruchomosci-jaka-stawka-ryczaltu"
+      }
+     ],
+     "checked": "22.10.2026",
+     "note": "Art. 12 ust. 1 pkt 2 lit. k: usługi związane z obsługą nieruchomości na zlecenie (PKWiU 68.3). Stawka 8,5% nie dotyczy pośrednictwa w sprzedaży nieruchomości."
     },
     {
      "l": "Działalność nierejestrowana – limit przychodu",
@@ -150,7 +194,7 @@
     {
      "l": "Obowiązkowe OC pośrednika",
      "v": "min. równowartość 25 000 euro",
-     "lvl": "B",
+     "lvl": "A",
      "ref": "Kurs, rozdz. 2.6; rozp. MF z 13.12.2013",
      "ch": 2,
      "sec": "2.6",
@@ -158,6 +202,10 @@
       {
        "n": "Rozp. MF z 13.12.2013 (Dz.U. 2013 poz. 1626) – tekst w serwisie Infor",
        "u": "https://www.infor.pl/akt-prawny/DZU.2013.241.0001626,rozporzadzenie-ministra-finansow-w-sprawie-obowiazkowego-ubezpieczenia-odpowiedzialnosci-cywilnej-posrednika-w-obrocie-nieruchomosciami.html"
+      },
+      {
+       "n": "Tekst rozporządzenia w rejestrze ELI",
+       "u": "https://api.sejm.gov.pl/eli/acts/DU/2013/1626/text.pdf"
       }
      ],
      "checked": "22.10.2026",
@@ -224,6 +272,74 @@
       {
        "n": "money.pl – odpisy z ksiąg wieczystych",
        "u": "https://www.money.pl/gospodarka/odpisy-z-ksiag-wieczystych-prezydent-podpisal-ustawe-7248537304504704a.html"
+      }
+     ],
+     "checked": "22.10.2026"
+    }
+   ]
+  },
+  {
+   "title": "Przepisy o pośrednictwie (u.g.n.)",
+   "items": [
+    {
+     "l": "Definicja pośrednika i pośrednictwa",
+     "v": "art. 179a i 179b u.g.n.",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 2.1",
+     "ch": 2,
+     "sec": "2.1",
+     "note": "Brzmienie w książce zgodne z tekstem (stan 25.08.2026).",
+     "srcs": [
+      {
+       "n": "Art. 179b u.g.n. (LexLege)",
+       "u": "https://lexlege.pl/ustawa-o-gospodarce-nieruchomosciami/art-179b/"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "Forma umowy pośrednictwa",
+     "v": "pisemna lub elektroniczna pod rygorem nieważności",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 20.1",
+     "ch": 20,
+     "sec": "20.1",
+     "note": "Art. 180 ust. 3 u.g.n.",
+     "srcs": [
+      {
+       "n": "Art. 180 u.g.n. (ArsLege)",
+       "u": "https://arslege.pl/ustawa-o-gospodarce-nieruchomosciami/k46/s2099/"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "OC pośrednika i polisa jako załącznik do umowy",
+     "v": "art. 181 ust. 3, 3a, 3b u.g.n.",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 2.4",
+     "ch": 2,
+     "sec": "2.4",
+     "note": "Wypowiedzenie ze skutkiem natychmiastowym, jeśli pośrednik nie przedłoży kopii polisy w 7 dni od pisemnego wezwania.",
+     "srcs": [
+      {
+       "n": "Art. 181 u.g.n. (LexLege)",
+       "u": "https://lexlege.pl/ustawa-o-gospodarce-nieruchomosciami/art-181/"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "Prawo wglądu pośrednika do rejestrów",
+     "v": "art. 181a u.g.n. – 9 pozycji",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 2.4",
+     "ch": 2,
+     "sec": "2.4",
+     "srcs": [
+      {
+       "n": "Art. 181a u.g.n. (ArsLege)",
+       "u": "https://arslege.pl/ustawa-o-gospodarce-nieruchomosciami/k46/s2099/"
       }
      ],
      "checked": "22.10.2026"

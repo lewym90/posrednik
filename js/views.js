@@ -32,7 +32,7 @@ function blockHTML(b) {
     default: return '';
   }
 }
-const KN = { zmiana: ['red', 'Zmiana względem książki'], uzupelnienie: ['blue', 'Uzupełnienie'], 'do-weryfikacji': ['amber', 'Do weryfikacji'] };
+const KN = { zaktualizowano: ['red', 'Zaktualizowano w treści'], potwierdzone: ['green', 'Potwierdzone w tekście przepisu'], zmiana: ['red', 'Zmiana względem książki'], uzupelnienie: ['blue', 'Uzupełnienie'], 'do-weryfikacji': ['amber', 'Do weryfikacji'] };
 function noticeHTML(x, kn = KN, link = false) {
   const [c, t] = kn[x.kind] || ['', x.kind];
   return `<aside class="plot notice"><div class="row"><span class="tag ${c}">${t}</span><b>${esc(x.title)}</b></div><p style="margin-top:8px">${esc(x.text)}</p><div class="srcs row" style="margin-top:8px;gap:6px">${(x.srcs || []).map(s => `<a class="tag blue" href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.n)}</a>`).join('')}</div><span class="note">Sprawdzono ${esc(x.date)}${link ? ` · <a href="#/kurs/${x.ch}/${x.sec}">rozdz. ${x.ch}, sekcja ${x.sec}</a>` : ''}</span></aside>`;
@@ -202,8 +202,8 @@ ${f.groups.map(g => `<div class="sectionhead"><h2>${esc(g.title)}</h2></div><div
       after: el => el.querySelector('.az').addEventListener('click', e => { const a = e.target.closest('a'); if (a) { e.preventDefault(); document.getElementById('l-' + a.dataset.l)?.scrollIntoView(); } }) };
   }
   if (tab === 'korekty') {
-    const k = await getJSON('korekty'); const kn = { zmiana: ['red', 'Zmiana względem książki'], uzupelnienie: ['blue', 'Uzupełnienie'], 'do-weryfikacji': ['amber', 'Do weryfikacji'] };
-    return { title: 'Baza', html: `${head}<p class="lead">Różnice między książką a aktualnym stanem na dzień sprawdzenia oraz miejsca, których nie udało się potwierdzić. Treść kursu pozostaje bez zmian – korekty widać tylko tutaj i w ramkach przy rozdziałach.</p><div class="warn" style="margin-top:12px;max-width:70ch"><b>Zakres sprawdzenia.</b> Porównałem tekst aplikacji z Twoim PDF-em (nic nie dopisano), sprawdziłem w rejestrze ELI numery publikacji aktów z wykazu oraz wybrane stawki i terminy. Nie sprawdzałem artykuł po artykule całej książki. Aplikacja nie zastępuje tekstu ustawy – o stanie prawnym rozstrzyga Dziennik Ustaw.</div><div class="stack" style="margin-top:14px">${k.map(x => noticeHTML(x, kn, true)).join('')}</div>` };
+    const k = await getJSON('korekty'); const kn = KN;
+    return { title: 'Baza', html: `${head}<p class="lead">Różnice między książką a aktualnym stanem na dzień sprawdzenia oraz miejsca, których nie udało się potwierdzić. Tam, gdzie książka podawała nieaktualny numer publikacji, zmieniłem go w treści i zaznaczyłem to tutaj; pozostałe różnice opisuję w ramkach.</p><div class="warn" style="margin-top:12px;max-width:70ch"><b>Zakres sprawdzenia.</b> Porównałem tekst aplikacji z Twoim PDF-em (nic nie dopisano), sprawdziłem w rejestrze ELI numery publikacji aktów z wykazu oraz wybrane stawki i terminy. Nie sprawdzałem artykuł po artykule całej książki. Aplikacja nie zastępuje tekstu ustawy – o stanie prawnym rozstrzyga Dziennik Ustaw.</div><div class="stack" style="margin-top:14px">${k.map(x => noticeHTML(x, kn, true)).join('')}</div>` };
   }
   const z = await getJSON('zrodla');
   return { title: 'Baza', html: `${head}<p class="lead">Gdzie sprawdzać aktualny stan prawny. Aplikacja jest pomocą do nauki – nie zastępuje tekstu ustawy.</p>${z.map(s => `<div class="sectionhead"><h2>${esc(s.title)}</h2></div>${s.items.length ? `<ul class="prose">${s.items.map(i => `<li>${safe(i)}</li>`).join('')}</ul>` : ''}${s.text ? `<p class="prose">${safe(s.text)}</p>` : ''}`).join('')}` };

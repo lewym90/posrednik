@@ -3,9 +3,9 @@
   "id": "k1",
   "ch": 10,
   "sec": "10.1",
-  "kind": "zmiana",
-  "title": "Nowy tekst jednolity ustawy o księgach wieczystych i hipotece",
-  "text": "Książka podaje t.j. Dz.U. z 2025 r. poz. 341. Rejestr ELI oznacza ten tekst jako wygasły (zastąpiony). Aktualny tekst jednolity: obwieszczenie Marszałka Sejmu z 31.07.2026 r., Dz.U. z 2026 r. poz. 1066. Treści przepisów w książce nie porównywałem z nowym tekstem – zweryfikuj brzmienie przytaczanych artykułów.",
+  "kind": "zaktualizowano",
+  "title": "Księgi wieczyste: nowy tekst jednolity (zmieniono w treści)",
+  "text": "Książka podawała t.j. Dz.U. z 2025 r. poz. 341, który rejestr ELI oznacza jako wygasły. W treści kursu zastąpiłem go aktualnym tekstem jednolitym: Dz.U. z 2026 r. poz. 1066 (obwieszczenie Marszałka Sejmu z 31.07.2026). Brzmienia przytaczanych w kursie artykułów ustawy nie porównywałem z nowym tekstem.",
   "srcs": [
    {
     "n": "ELI: Dz.U. 2025 poz. 341 (status: wygaśnięcie aktu)",
@@ -22,9 +22,9 @@
   "id": "k2",
   "ch": 17,
   "sec": "17.8",
-  "kind": "uzupelnienie",
+  "kind": "zaktualizowano",
   "title": "Stawki podatku od nieruchomości na 2027 r.",
-  "text": "Tabela w książce (stawki na 2026 r.) zgadza się z danymi z publikacji prasowej. Na 2027 r. obowiązuje już nowe obwieszczenie Ministra Finansów i Gospodarki z 23.07.2026 r. (M.P. 2026 poz. 741). Górne granice na 2027: budynki mieszkalne 1,29 zł/m²; budynki związane z działalnością gospodarczą 36,49 zł/m²; grunty związane z działalnością gospodarczą 1,49 zł/m²; grunty pozostałe 0,80 zł/m². Ostateczne stawki ustala rada gminy – sprawdź uchwałę właściwej gminy.",
+  "text": "Tabela w książce (zostawiona bez zmian) (stawki na 2026 r.) zgadza się z danymi z publikacji prasowej. Na 2027 r. obowiązuje już nowe obwieszczenie Ministra Finansów i Gospodarki z 23.07.2026 r. (M.P. 2026 poz. 741). Górne granice na 2027: budynki mieszkalne 1,29 zł/m²; budynki związane z działalnością gospodarczą 36,49 zł/m²; grunty związane z działalnością gospodarczą 1,49 zł/m²; grunty pozostałe 0,80 zł/m². Ostateczne stawki ustala rada gminy – sprawdź uchwałę właściwej gminy.",
   "srcs": [
    {
     "n": "ELI: M.P. 2026 poz. 741",
@@ -41,17 +41,13 @@
   "id": "k3",
   "ch": 4,
   "sec": "4.4",
-  "kind": "do-weryfikacji",
-  "title": "Ryczałt 15% – numeracja przepisu",
-  "text": "Stawka 15% dla pośrednictwa w obrocie nieruchomościami (nie 8,5%) potwierdzona w dwóch publikacjach. Książka wskazuje jako podstawę art. 12 ust. 1 pkt 2 lit. k, a jedna z publikacji – art. 12 ust. 1 pkt 1 lit. k. Numeru punktu nie rozstrzygnąłem; sprawdź w aktualnym tekście ustawy. Numeru interpretacji KIS cytowanej w książce nie weryfikowałem.",
+  "kind": "potwierdzone",
+  "title": "Ryczałt 15% dla pośrednictwa – potwierdzone w tekście ustawy",
+  "text": "W tekście jednolitym ustawy o zryczałtowanym podatku (Dz.U. 2025 poz. 843, w rejestrze ELI obowiązujący) art. 12 ust. 1 pkt 2 lit. k brzmi: „związanych z obsługą nieruchomości, świadczonych na zlecenie (PKWiU 68.3)” – stawka 15%. Książka ma rację; jedna z publikacji internetowych podawała błędnie „pkt 1”. Numeru interpretacji KIS cytowanej w książce nie weryfikowałem.",
   "srcs": [
    {
-    "n": "Poradnik Przedsiębiorcy – stawka ryczałtu dla pośrednictwa",
-    "u": "https://poradnikprzedsiebiorcy.pl/-uslugi-posrednictwa-w-sprzedazy-nieruchomosci-jaka-stawka-ryczaltu"
-   },
-   {
-    "n": "Solidna Księgowa – ryczałt dla pośrednika",
-    "u": "https://solidnaksiegowa.com/ryczalt-dla-posrednika-nieruchomosci-jaka-stawka-wybrac/"
+    "n": "Tekst ustawy w rejestrze ELI (Dz.U. 2025 poz. 843)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2025/843/text.pdf"
    }
   ],
   "date": "22.10.2026"
@@ -94,17 +90,17 @@
   "id": "k6",
   "ch": 4,
   "sec": "4.7",
-  "kind": "do-weryfikacji",
-  "title": "Kasa fiskalna – brzmienie rozporządzenia",
-  "text": "Limit 20 000 zł rocznie potwierdzony jako utrzymany na 2026 r. w jednej publikacji. Zwolnienia dla usług opłacanych fakturą i przelewem potwierdziła publikacja z 2023 r. cytująca rozporządzenie z 2021 r. Aktualnego tekstu rozporządzenia Ministra Finansów nie udało mi się odczytać, więc te zwolnienia pozostają niepotwierdzone na dziś – sprawdź aktualne rozporządzenie.",
+  "kind": "potwierdzone",
+  "title": "Kasa fiskalna – zwolnienia potwierdzone w rozporządzeniu",
+  "text": "Obowiązuje rozporządzenie Ministra Finansów z 17.12.2024 (Dz.U. 2024 poz. 1902), stosowane w latach 2025–2027, zmieniane od 31.03.2026. Limit zwolnienia podmiotowego: 20 000 zł (§ 3 ust. 1 pkt 1). Pośrednictwo nie jest wymienione wprost; najbliższa pozycja to poz. 30 załącznika – „usługi związane z obsługą rynku nieruchomości, jeżeli świadczenie tych usług w całości zostało udokumentowane fakturą”. Zwolnienie przy zapłacie przez bank dotyczy m.in. poz. 42 (usługi dla osób fizycznych nieprowadzących działalności). Zaliczenie pośrednictwa do poz. 30 i 42 to wykładnia – potwierdź z księgowym.",
   "srcs": [
    {
-    "n": "Poradnik Przedsiębiorcy – limit zwolnienia z kasy 2026",
-    "u": "https://poradnikprzedsiebiorcy.pl/-limit-zwolnienia-z-kasy-fiskalnej"
+    "n": "Rozporządzenie MF – tekst w rejestrze ELI (Dz.U. 2024 poz. 1902)",
+    "u": "https://eli.gov.pl/api/acts/DU/2024/1902/text/O/D20241902.pdf"
    },
    {
-    "n": "Poradnik Przedsiębiorcy – kasa fiskalna dla pośrednika",
-    "u": "https://poradnikprzedsiebiorcy.pl/-kasa-fiskalna-dla-posrednika-nieruchomosci-czy-jest-obowiazkowa"
+    "n": "Podatki.biz – nowe zwolnienia od 31.03.2026",
+    "u": "https://www.podatki.biz/artykuly/kasy-fiskalne-2025-2027-od-31-marca-2026-r-obowiazuja-nowe-zwolnienia_34_61696.htm"
    }
   ],
   "date": "22.10.2026"
@@ -113,17 +109,21 @@
   "id": "k7",
   "ch": 10,
   "sec": "10.5",
-  "kind": "do-weryfikacji",
-  "title": "Księgi wieczyste od 31.03.2026 – kwoty opłat",
-  "text": "Termin 31.03.2026 dla zmian dotyczących ksiąg wieczystych (dokumenty z systemu mają moc dokumentów sądowych) potwierdziła publikacja money.pl; ustawa z 9.01.2026 jest w rejestrze ELI jako obowiązująca (Dz.U. 2026 poz. 119). Kwot opłat za odpisy i wyciągi z tabeli w książce nie udało mi się potwierdzić w żadnym sprawdzonym źródle – sprawdź komunikat Ministerstwa Sprawiedliwości i rozporządzenie.",
+  "kind": "potwierdzone",
+  "title": "Księgi wieczyste od 31.03.2026 – opłaty za odpisy potwierdzone",
+  "text": "Tabela opłat w książce (odpis zwykły 30/45 zł, zupełny 75/90 zł, wyciągi, zaświadczenie 10/15 zł, wyszukanie 30 zł) zgadza się ze stroną Ministerstwa Sprawiedliwości (ostatnia modyfikacja 1.04.2026). Poprzednie, niższe stawki pochodziły z rozporządzenia uchylonego z dniem 31.03.2026. Opłaty sądowe od wniosków: 200 zł (wpis własności, użytkowania wieczystego i ograniczonego prawa rzeczowego), 150 zł (dziedziczenie, dział spadku, zniesienie współwłasności, prawa osobiste i roszczenia) – zgodne z art. 42–43 ustawy o kosztach sądowych (t.j. Dz.U. 2025 poz. 1228). Kwot za założenie księgi (100 zł) i wykreślenie wpisu nie sprawdziłem.",
   "srcs": [
    {
-    "n": "money.pl – odpisy z ksiąg wieczystych",
-    "u": "https://www.money.pl/gospodarka/odpisy-z-ksiag-wieczystych-prezydent-podpisal-ustawe-7248537304504704a.html"
+    "n": "Ministerstwo Sprawiedliwości – opłaty",
+    "u": "https://www.gov.pl/web/sprawiedliwosc/oplaty"
    },
    {
-    "n": "ELI: Dz.U. 2026 poz. 119",
-    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/119"
+    "n": "Art. 42 ustawy o kosztach sądowych (LexLege)",
+    "u": "https://lexlege.pl/ustawa-o-kosztach-sadowych-w-sprawach-cywilnych/art-42/"
+   },
+   {
+    "n": "Art. 43 ustawy o kosztach sądowych (LexLege)",
+    "u": "https://lexlege.pl/ustawa-o-kosztach-sadowych-w-sprawach-cywilnych/art-43/"
    }
   ],
   "date": "22.10.2026"
@@ -139,6 +139,89 @@
    {
     "n": "money.pl – mieszkanie bez wkładu własnego",
     "u": "https://direct.money.pl/artykuly/porady/mieszkanie-bez-wkladu-wlasnego-w-ramach-nowego-ladu"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k9",
+  "ch": 2,
+  "sec": "2.1",
+  "kind": "potwierdzone",
+  "title": "Art. 179a i 179b u.g.n. – brzmienie zgodne",
+  "text": "Treść art. 179a i art. 179b (cztery punkty) cytowana w książce jest zgodna słowo w słowo z aktualnym tekstem (stan prawny serwisu: 25.08.2026, t.j. Dz.U. 2026 poz. 399).",
+  "srcs": [
+   {
+    "n": "Art. 179b u.g.n. (LexLege)",
+    "u": "https://lexlege.pl/ustawa-o-gospodarce-nieruchomosciami/art-179b/"
+   },
+   {
+    "n": "Ustawa o gospodarce nieruchomościami (ArsLege)",
+    "u": "https://arslege.pl/ustawa-o-gospodarce-nieruchomosciami/k46/s2099/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k10",
+  "ch": 2,
+  "sec": "2.4",
+  "kind": "potwierdzone",
+  "title": "Art. 181 ust. 3, 3a, 3b oraz art. 181a u.g.n. – zgodne",
+  "text": "Cytaty z art. 181 ust. 3, 3a i 3b (OC pośrednika, kopia polisy jako załącznik, wypowiedzenie po 7 dniach) oraz wykaz 9 punktów art. 181a (prawo wglądu) zgadzają się z aktualnym tekstem (stan serwisów: 26.08.2026).",
+  "srcs": [
+   {
+    "n": "Art. 181 u.g.n. (LexLege)",
+    "u": "https://lexlege.pl/ustawa-o-gospodarce-nieruchomosciami/art-181/"
+   },
+   {
+    "n": "Art. 180 i 181a u.g.n. (ArsLege)",
+    "u": "https://arslege.pl/ustawa-o-gospodarce-nieruchomosciami/k46/s2099/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k11",
+  "ch": 20,
+  "sec": "20.1",
+  "kind": "potwierdzone",
+  "title": "Art. 180 ust. 3 u.g.n. – forma umowy",
+  "text": "„Umowa wymaga formy pisemnej lub elektronicznej pod rygorem nieważności” – zgodnie z aktualnym tekstem (pozostałe ustępy art. 180 są uchylone).",
+  "srcs": [
+   {
+    "n": "Art. 180 u.g.n. (ArsLege)",
+    "u": "https://arslege.pl/ustawa-o-gospodarce-nieruchomosciami/k46/s2099/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k12",
+  "ch": 17,
+  "sec": "17.3",
+  "kind": "potwierdzone",
+  "title": "PCC – stawka, zwolnienie, termin (tekst ustawy)",
+  "text": "Sprawdzone w tekście jednolitym (Dz.U. 2026 poz. 191): art. 7 ust. 1 pkt 1 lit. a – 2% od sprzedaży nieruchomości; art. 4 pkt 1 – podatnikiem przy sprzedaży jest kupujący; art. 9 pkt 17 – zwolnienie dla kupującego, który nie miał żadnego z tych praw (wyjątek: udział do 50% nabyty ze spadku); art. 10 ust. 1 – deklaracja i zapłata w 14 dni od powstania obowiązku (z wyjątkiem płatnika, np. notariusza).",
+  "srcs": [
+   {
+    "n": "Tekst ustawy w rejestrze ELI (Dz.U. 2026 poz. 191)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/191/text.pdf"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k13",
+  "ch": 4,
+  "sec": "4.3",
+  "kind": "potwierdzone",
+  "title": "OC pośrednika – rozporządzenie",
+  "text": "Tekst rozporządzenia MF z 13.12.2013 (Dz.U. 2013 poz. 1626): § 3 – obowiązek powstaje najpóźniej w dniu poprzedzającym rozpoczęcie czynności; § 4 – min. 25 000 euro na jedno zdarzenie i na wszystkie zdarzenia w okresie ubezpieczenia do 12 miesięcy; przeliczenie po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy. Zgodne z książką.",
+  "srcs": [
+   {
+    "n": "Tekst rozporządzenia w rejestrze ELI",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2013/1626/text.pdf"
    }
   ],
   "date": "22.10.2026"
