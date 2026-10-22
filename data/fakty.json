@@ -172,6 +172,63 @@
      "sec": "2.6"
     }
    ]
+  },
+  {
+   "title": "Rynek i kredyt",
+   "items": [
+    {
+     "l": "Rejestr cen nieruchomości (RCN)",
+     "v": "bezpłatny dostęp od 13.02.2026",
+     "lvl": "A",
+     "ref": "Kurs, rozdz. 11.5",
+     "ch": 11,
+     "sec": "11.5",
+     "note": "Nowelizacja Prawa geodezyjnego i kartograficznego, Dz.U. 2025 poz. 1542, ogłoszona 12.11.2025.",
+     "srcs": [
+      {
+       "n": "Geoportal.gov.pl – nowelizacja ustawy",
+       "u": "https://www.geoportal.gov.pl/aktualnosci/nowelizacja-ustawy-prawo-geodezyjne-i-kartograficzne-opublikowana-w-dzienniku-ustaw-2/"
+      },
+      {
+       "n": "Ongeo – RCN za darmo od 13.02.2026",
+       "u": "https://blog.ongeo.pl/news-rejestr-cen-nieruchomosci-za-darmo-od-13-lutego-2026"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "Kredyty hipoteczne oparte na POLSTR",
+     "v": "PKO BP od 3.09.2026 jako pierwszy bank",
+     "lvl": "B",
+     "ref": "Kurs, rozdz. 18.3",
+     "ch": 18,
+     "sec": "18.3",
+     "note": "Dotyczy nowych kredytów; istniejących nie zmieniono automatycznie. Źródło jedno (money.pl).",
+     "srcs": [
+      {
+       "n": "money.pl – PKO BP i POLSTR",
+       "u": "https://direct.money.pl/artykuly/porady/pko-bp-polstr-nowe-kredyty-hipoteczne"
+      }
+     ],
+     "checked": "22.10.2026"
+    },
+    {
+     "l": "Księgi wieczyste – dokumenty z systemu jak dokumenty sądowe",
+     "v": "od 31.03.2026",
+     "lvl": "B",
+     "ref": "Kurs, rozdz. 10.5",
+     "ch": 10,
+     "sec": "10.5",
+     "note": "Kwot opłat nie potwierdzono – patrz zakładka Korekty.",
+     "srcs": [
+      {
+       "n": "money.pl – odpisy z ksiąg wieczystych",
+       "u": "https://www.money.pl/gospodarka/odpisy-z-ksiag-wieczystych-prezydent-podpisal-ustawe-7248537304504704a.html"
+      }
+     ],
+     "checked": "22.10.2026"
+    }
+   ]
   }
  ]
 }

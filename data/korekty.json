@@ -1,0 +1,146 @@
+[
+ {
+  "id": "k1",
+  "ch": 10,
+  "sec": "10.1",
+  "kind": "zmiana",
+  "title": "Nowy tekst jednolity ustawy o księgach wieczystych i hipotece",
+  "text": "Książka podaje t.j. Dz.U. z 2025 r. poz. 341. Rejestr ELI oznacza ten tekst jako wygasły (zastąpiony). Aktualny tekst jednolity: obwieszczenie Marszałka Sejmu z 31.07.2026 r., Dz.U. z 2026 r. poz. 1066. Treści przepisów w książce nie porównywałem z nowym tekstem – zweryfikuj brzmienie przytaczanych artykułów.",
+  "srcs": [
+   {
+    "n": "ELI: Dz.U. 2025 poz. 341 (status: wygaśnięcie aktu)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2025/341"
+   },
+   {
+    "n": "ELI: Dz.U. 2026 poz. 1066 (obowiązujący)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/1066"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k2",
+  "ch": 17,
+  "sec": "17.8",
+  "kind": "uzupelnienie",
+  "title": "Stawki podatku od nieruchomości na 2027 r.",
+  "text": "Tabela w książce (stawki na 2026 r.) zgadza się z danymi z publikacji prasowej. Na 2027 r. obowiązuje już nowe obwieszczenie Ministra Finansów i Gospodarki z 23.07.2026 r. (M.P. 2026 poz. 741). Górne granice na 2027: budynki mieszkalne 1,29 zł/m²; budynki związane z działalnością gospodarczą 36,49 zł/m²; grunty związane z działalnością gospodarczą 1,49 zł/m²; grunty pozostałe 0,80 zł/m². Ostateczne stawki ustala rada gminy – sprawdź uchwałę właściwej gminy.",
+  "srcs": [
+   {
+    "n": "ELI: M.P. 2026 poz. 741",
+    "u": "https://api.sejm.gov.pl/eli/acts/MP/2026/741"
+   },
+   {
+    "n": "Gazeta Prawna – podatek od nieruchomości 2027",
+    "u": "https://www.gazetaprawna.pl/podatki/inne-podatki/artykuly/11282068,podatek-od-nieruchomosci-w-2027-r-sa-nowe-stawki-129-zl-za-1-m2-mieszkania-i-3649-zl-za-lokale-firmowe.html"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k3",
+  "ch": 4,
+  "sec": "4.4",
+  "kind": "do-weryfikacji",
+  "title": "Ryczałt 15% – numeracja przepisu",
+  "text": "Stawka 15% dla pośrednictwa w obrocie nieruchomościami (nie 8,5%) potwierdzona w dwóch publikacjach. Książka wskazuje jako podstawę art. 12 ust. 1 pkt 2 lit. k, a jedna z publikacji – art. 12 ust. 1 pkt 1 lit. k. Numeru punktu nie rozstrzygnąłem; sprawdź w aktualnym tekście ustawy. Numeru interpretacji KIS cytowanej w książce nie weryfikowałem.",
+  "srcs": [
+   {
+    "n": "Poradnik Przedsiębiorcy – stawka ryczałtu dla pośrednictwa",
+    "u": "https://poradnikprzedsiebiorcy.pl/-uslugi-posrednictwa-w-sprzedazy-nieruchomosci-jaka-stawka-ryczaltu"
+   },
+   {
+    "n": "Solidna Księgowa – ryczałt dla pośrednika",
+    "u": "https://solidnaksiegowa.com/ryczalt-dla-posrednika-nieruchomosci-jaka-stawka-wybrac/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k4",
+  "ch": 4,
+  "sec": "4.4",
+  "kind": "uzupelnienie",
+  "title": "Składka zdrowotna w 2026 r. – kwoty",
+  "text": "Książka nie podaje kwot. Według jednej publikacji (pit.pl) w 2026 r.: ryczałt – 498,35 zł (przychód do 60 000 zł), 830,58 zł (60–300 tys. zł), 1 495,04 zł (powyżej 300 tys. zł); skala i liniowy – minimum 432,54 zł miesięcznie (podstawa 4 806 zł). Źródło jest jedno i nie urzędowe – kwoty na 2027 r. i obowiązujące wartości potwierdź w ZUS.",
+  "srcs": [
+   {
+    "n": "pit.pl – składka zdrowotna przedsiębiorców 2026",
+    "u": "https://www.pit.pl/aktualnosci/skladka-zdrowotna-przedsiebiorcow-w-2026-r"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k5",
+  "ch": 4,
+  "sec": "4.5",
+  "kind": "do-weryfikacji",
+  "title": "Ulgi w ZUS",
+  "text": "Mały ZUS Plus: limit przychodu 120 000 zł (za rok poprzedni) potwierdzony w dwóch publikacjach; dolna granica podstawy w 2026 r. to 30% płacy minimalnej (1 441,80 zł przy 4 806 zł). Ulga na start (6 miesięcy) i preferencyjne składki (24 miesiące) – nie znalazłem w sprawdzonych źródłach pełnego potwierdzenia, zostają wyłącznie według książki. Zweryfikuj w ZUS przed rejestracją firmy.",
+  "srcs": [
+   {
+    "n": "Fakturownia – Mały ZUS 2026",
+    "u": "https://fakturownia.pl/aktualnosci/poznaj-najwazniejsze-zmiany-w-malym-zusie-na-2026-rok"
+   },
+   {
+    "n": "Podatnik.info – Mały ZUS Plus 2026",
+    "u": "https://www.podatnik.info/publikacje/nowe-limity-maly-zus-plus-2026-korzystniejsze-zmiany-dla-przedsiebiorcow,6662a7"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k6",
+  "ch": 4,
+  "sec": "4.7",
+  "kind": "do-weryfikacji",
+  "title": "Kasa fiskalna – brzmienie rozporządzenia",
+  "text": "Limit 20 000 zł rocznie potwierdzony jako utrzymany na 2026 r. w jednej publikacji. Zwolnienia dla usług opłacanych fakturą i przelewem potwierdziła publikacja z 2023 r. cytująca rozporządzenie z 2021 r. Aktualnego tekstu rozporządzenia Ministra Finansów nie udało mi się odczytać, więc te zwolnienia pozostają niepotwierdzone na dziś – sprawdź aktualne rozporządzenie.",
+  "srcs": [
+   {
+    "n": "Poradnik Przedsiębiorcy – limit zwolnienia z kasy 2026",
+    "u": "https://poradnikprzedsiebiorcy.pl/-limit-zwolnienia-z-kasy-fiskalnej"
+   },
+   {
+    "n": "Poradnik Przedsiębiorcy – kasa fiskalna dla pośrednika",
+    "u": "https://poradnikprzedsiebiorcy.pl/-kasa-fiskalna-dla-posrednika-nieruchomosci-czy-jest-obowiazkowa"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k7",
+  "ch": 10,
+  "sec": "10.5",
+  "kind": "do-weryfikacji",
+  "title": "Księgi wieczyste od 31.03.2026 – kwoty opłat",
+  "text": "Termin 31.03.2026 dla zmian dotyczących ksiąg wieczystych (dokumenty z systemu mają moc dokumentów sądowych) potwierdziła publikacja money.pl; ustawa z 9.01.2026 jest w rejestrze ELI jako obowiązująca (Dz.U. 2026 poz. 119). Kwot opłat za odpisy i wyciągi z tabeli w książce nie udało mi się potwierdzić w żadnym sprawdzonym źródle – sprawdź komunikat Ministerstwa Sprawiedliwości i rozporządzenie.",
+  "srcs": [
+   {
+    "n": "money.pl – odpisy z ksiąg wieczystych",
+    "u": "https://www.money.pl/gospodarka/odpisy-z-ksiag-wieczystych-prezydent-podpisal-ustawe-7248537304504704a.html"
+   },
+   {
+    "n": "ELI: Dz.U. 2026 poz. 119",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/119"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k8",
+  "ch": 18,
+  "sec": "18.7",
+  "kind": "do-weryfikacji",
+  "title": "Rodzinny kredyt mieszkaniowy – kwota gwarancji",
+  "text": "Książka podaje maksymalną gwarancję 100 000 zł. Sprawdzony artykuł z 2024 r. opisuje gwarancję do 20% wartości nieruchomości i do 200 000 zł, a daty zakończenia programu nie podaje. Dane są sprzeczne i nie potwierdzają aktualnych warunków na 2026 r. – przed rozmową z klientem sprawdź je na stronie BGK.",
+  "srcs": [
+   {
+    "n": "money.pl – mieszkanie bez wkładu własnego",
+    "u": "https://direct.money.pl/artykuly/porady/mieszkanie-bez-wkladu-wlasnego-w-ramach-nowego-ladu"
+   }
+  ],
+  "date": "22.10.2026"
+ }
+]

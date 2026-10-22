@@ -32,6 +32,11 @@ function blockHTML(b) {
     default: return '';
   }
 }
+const KN = { zmiana: ['red', 'Zmiana względem książki'], uzupelnienie: ['blue', 'Uzupełnienie'], 'do-weryfikacji': ['amber', 'Do weryfikacji'] };
+function noticeHTML(x, kn = KN, link = false) {
+  const [c, t] = kn[x.kind] || ['', x.kind];
+  return `<aside class="plot notice"><div class="row"><span class="tag ${c}">${t}</span><b>${esc(x.title)}</b></div><p style="margin-top:8px">${esc(x.text)}</p><div class="srcs row" style="margin-top:8px;gap:6px">${(x.srcs || []).map(s => `<a class="tag blue" href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.n)}</a>`).join('')}</div><span class="note">Sprawdzono ${esc(x.date)}${link ? ` · <a href="#/kurs/${x.ch}/${x.sec}">rozdz. ${x.ch}, sekcja ${x.sec}</a>` : ''}</span></aside>`;
+}
 const dz = (n, cls = '') => `<span class="dz ${cls}"><span><small>rozdz.</small>${n}</span></span>`;
 
 /* ───────── START ───────── */
@@ -113,14 +118,14 @@ export async function kursList() {
   return { title: 'Kurs', html: `<h1 class="pagetitle">Kurs pośrednika</h1><p class="lead">Pełna treść Twojej publikacji, stan prawny: ${esc(book.legalState)}. Zaznaczaj przeczytane sekcje, a mapa na ekranie startowym zabuduje się sama.</p>${html}` };
 }
 export async function kursChapter(n, sec) {
-  const book = await getJSON('book'); const chs = chapters(book);
+  const book = await getJSON('book'); const chs = chapters(book); const kor = (await getJSON('korekty')).filter(x => x.ch === +n);
   const idx = chs.findIndex(c => c.n === +n); const c = chs[idx];
   if (!c) return { title: 'Nie znaleziono', html: '<div class="empty"><strong>Nie ma takiego rozdziału.</strong><a href="#/kurs">Wróć do spisu</a></div>' };
   const pr = chProgress(c);
   const toc = c.sections.map(s => `<a href="#/kurs/${c.n}/${s.id}" data-sec="${s.id}" class="${state().read[secKey(c.n, s.id)] ? 'read' : ''}"><span class="n">${s.id.startsWith(c.n + '.0') ? '' : s.id}</span><span>${esc(s.title)}</span></a>`).join('');
   const body = c.sections.map(s => `
 <section class="sec" id="s-${s.id}">${s.id === `${c.n}.0` ? '' : `<h2><span class="n">${s.id}</span>${esc(s.title)}</h2>`}
-<div class="prose">${blocksHTML(s.blocks)}</div>
+${kor.filter(x => x.sec === s.id).map(x => `<div style="max-width:66ch;margin-top:12px">${noticeHTML(x)}</div>`).join('')}<div class="prose">${blocksHTML(s.blocks)}</div>
 <div class="done-row"><button class="btn small ${state().read[secKey(c.n, s.id)] ? '' : 'quiet'}" data-act="read" data-s="${s.id}" aria-pressed="${!!state().read[secKey(c.n, s.id)]}">${icon('check')} <span>${state().read[secKey(c.n, s.id)] ? 'Przeczytane' : 'Oznacz jako przeczytane'}</span></button></div></section>`).join('');
   const check = c.check.length ? `<section class="sec" id="s-check"><h2>Sprawdź się</h2><div class="prose"><p>Odpowiedz sobie na pytania, potem porównaj z kluczem. Karta po karcie:</p></div><div style="margin-top:12px"><a class="btn primary" href="#/cwicz/fiszki/${c.n}">${icon('flash')} Fiszki z rozdziału ${c.n} (${c.check.length})</a></div></section>` : '';
   const prev = chs[idx - 1], nxt = chs[idx + 1];
@@ -151,7 +156,7 @@ ${c.sources ? `<p class="src"><b>Podstawa:</b> ${safe(c.sources.replace(/^Źród
 }
 
 /* ───────── BAZA ───────── */
-const baseTabs = cur => `<div class="seg" role="tablist">${[['przepisy', 'Przepisy'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
+const baseTabs = cur => `<div class="seg" role="tablist">${[['przepisy', 'Przepisy'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
 export async function baza(tab = 'przepisy', q = '') {
   const head = `<h1 class="pagetitle">Baza wiedzy</h1>${baseTabs(tab)}`;
   if (tab === 'przepisy') {
@@ -178,7 +183,7 @@ export async function baza(tab = 'przepisy', q = '') {
     return { title: 'Baza', html: `${head}<p class="lead">Wykaz aktów z kursu wraz z adresami publikacji (stan: wrzesień 2026). Numery pozycji warto każdorazowo potwierdzić w Dzienniku Ustaw, bo teksty jednolite są często ogłaszane na nowo.</p>
 <div class="searchbar" style="margin:14px 0">${icon('search')}<input class="inp" id="aq" type="search" placeholder="Szukaj aktu" aria-label="Szukaj aktu"></div><div id="alist"></div>`,
       after: el => {
-        const draw = () => { const t = fold(el.querySelector('#aq').value); el.querySelector('#alist').innerHTML = groups.map(g => { const r = acts.filter(a => a.group === g && fold(a.title + a.pub).includes(t)); return r.length ? `<div class="sectionhead"><h2>${esc(g)}</h2><span class="muted num">${r.length}</span></div><div class="grid c2">${r.map(a => `<article class="card act"><span class="t">${esc(a.title)}</span><span class="pub num">${esc(a.pub)}</span></article>`).join('')}</div>` : ''; }).join(''); };
+        const draw = () => { const t = fold(el.querySelector('#aq').value); el.querySelector('#alist').innerHTML = groups.map(g => { const r = acts.filter(a => a.group === g && fold(a.title + a.pub).includes(t)); return r.length ? `<div class="sectionhead"><h2>${esc(g)}</h2><span class="muted num">${r.length}</span></div><div class="grid c2">${r.map(a => `<article class="card act"><span class="t">${esc(a.title)}</span><span class="pub num">${esc(a.pub)}</span>${a.bookPub ? `<span class="tag amber">w książce: ${esc(a.bookPub)}</span>` : ''}${a.note ? `<span class="note">${esc(a.note)}</span>` : ''}<span class="note">${a.eli ? esc(a.eli) : 'numeru nie sprawdzano w ELI'}</span></article>`).join('')}</div>` : ''; }).join(''); };
         el.querySelector('#aq').addEventListener('input', draw); draw();
       } };
   }
@@ -195,6 +200,10 @@ ${f.groups.map(g => `<div class="sectionhead"><h2>${esc(g.title)}</h2></div><div
     g.forEach(x => { const L = x.term[0].toUpperCase(); if (L !== cur) { cur = L; out += `<div class="letter" id="l-${L}">${L}</div>`; } out += `<dl class="term" style="margin:0"><dt>${esc(x.term)}</dt><dd>${safe(x.def)}</dd></dl>`; });
     return { title: 'Baza', html: `${head}<p class="lead">${g.length} pojęć z kursu.</p><div class="az">${letters.map(l => `<a href="#/baza/slownik" data-l="${l}">${l}</a>`).join('')}</div>${out}`,
       after: el => el.querySelector('.az').addEventListener('click', e => { const a = e.target.closest('a'); if (a) { e.preventDefault(); document.getElementById('l-' + a.dataset.l)?.scrollIntoView(); } }) };
+  }
+  if (tab === 'korekty') {
+    const k = await getJSON('korekty'); const kn = { zmiana: ['red', 'Zmiana względem książki'], uzupelnienie: ['blue', 'Uzupełnienie'], 'do-weryfikacji': ['amber', 'Do weryfikacji'] };
+    return { title: 'Baza', html: `${head}<p class="lead">Różnice między książką a aktualnym stanem na dzień sprawdzenia oraz miejsca, których nie udało się potwierdzić. Treść kursu pozostaje bez zmian – korekty widać tylko tutaj i w ramkach przy rozdziałach.</p><div class="warn" style="margin-top:12px;max-width:70ch"><b>Zakres sprawdzenia.</b> Porównałem tekst aplikacji z Twoim PDF-em (nic nie dopisano), sprawdziłem w rejestrze ELI numery publikacji aktów z wykazu oraz wybrane stawki i terminy. Nie sprawdzałem artykuł po artykule całej książki. Aplikacja nie zastępuje tekstu ustawy – o stanie prawnym rozstrzyga Dziennik Ustaw.</div><div class="stack" style="margin-top:14px">${k.map(x => noticeHTML(x, kn, true)).join('')}</div>` };
   }
   const z = await getJSON('zrodla');
   return { title: 'Baza', html: `${head}<p class="lead">Gdzie sprawdzać aktualny stan prawny. Aplikacja jest pomocą do nauki – nie zastępuje tekstu ustawy.</p>${z.map(s => `<div class="sectionhead"><h2>${esc(s.title)}</h2></div>${s.items.length ? `<ul class="prose">${s.items.map(i => `<li>${safe(i)}</li>`).join('')}</ul>` : ''}${s.text ? `<p class="prose">${safe(s.text)}</p>` : ''}`).join('')}` };
