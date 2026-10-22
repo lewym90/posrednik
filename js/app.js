@@ -3,6 +3,9 @@ import { applyPrefs, onChange } from './store.js';
 import * as V from './views.js';
 import * as U from './ustawy.js';
 import * as PR from './procesy.js';
+import * as ZM from './zmiany.js';
+import * as WZ from './wzory.js';
+import * as ST from './start.js';
 
 applyPrefs();
 const NAV = [['', 'Start', 'home'], ['kurs', 'Kurs', 'book'], ['baza', 'Baza', 'db'], ['procesy', 'Procesy', 'sheet'], ['cwicz', 'Ćwicz', 'quiz'], ['narzedzia', 'Narzędzia', 'tool'], ['droga', 'Droga', 'road', 1], ['ustawienia', 'Ustawienia', 'gear', 1]];
@@ -27,10 +30,10 @@ async function route() {
   try {
     if (area === '') r = await V.start();
     else if (area === 'kurs') r = p[1] ? await V.kursChapter(p[1], p[2]) : await V.kursList();
-    else if (area === 'baza') r = (!p[1] || p[1] === 'ustawy') ? (p[2] ? await U.ustawa(p[2], p[3], p[4]) : await U.ustawyList()) : await V.baza(p[1], new URLSearchParams(query).get('q') || '');
+    else if (area === 'baza') r = p[1] === 'zmiany' ? await ZM.zmiany() : (!p[1] || p[1] === 'ustawy') ? (p[2] ? await U.ustawa(p[2], p[3], p[4]) : await U.ustawyList()) : await V.baza(p[1], new URLSearchParams(query).get('q') || '');
     else if (area === 'procesy') r = p[1] ? await PR.rodzaj(p[1]) : await PR.lista();
     else if (area === 'cwicz') r = p[1] === 'test' ? await V.test(p[2]) : p[1] === 'fiszki' ? await V.fiszki(p[2]) : await V.cwiczHub();
-    else if (area === 'narzedzia') r = p[1] ? await V.narzedzie(p[1]) : V.narzedzia();
+    else if (area === 'narzedzia') r = p[1] === 'wzory' ? await WZ.wzory(p[2]) : p[1] === 'start' ? await ST.startBiura() : p[1] ? await V.narzedzie(p[1]) : V.narzedzia();
     else if (area === 'droga') r = await V.droga();
     else if (area === 'ustawienia') r = V.ustawienia();
     else r = { title: 'Nie znaleziono', html: '<div class="empty"><strong>Tej strony nie ma.</strong><a href="#/">Wróć na start</a></div>' };

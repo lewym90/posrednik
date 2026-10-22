@@ -79,7 +79,7 @@ export async function ustawyList() {
     }
   };
 }
-const tabs = () => `<div class="seg" role="tablist">${[['ustawy', 'Ustawy'], ['przepisy', 'Z kursu'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === 'ustawy'}">${n}</a>`).join('')}</div>`;
+const tabs = () => `<div class="seg" role="tablist">${[['ustawy', 'Ustawy'], ['zmiany', 'Zmiany'], ['przepisy', 'Z kursu'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === 'ustawy'}">${n}</a>`).join('')}</div>`;
 
 /* ── widok ustawy ── */
 export async function ustawa(id, mode, arg) {

@@ -156,7 +156,7 @@ ${c.sources ? `<p class="src"><b>Podstawa:</b> ${safe(c.sources.replace(/^Źród
 }
 
 /* ───────── BAZA ───────── */
-const baseTabs = cur => `<div class="seg" role="tablist">${[['ustawy', 'Ustawy'], ['przepisy', 'Z kursu'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
+const baseTabs = cur => `<div class="seg" role="tablist">${[['ustawy', 'Ustawy'], ['zmiany', 'Zmiany'], ['przepisy', 'Z kursu'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
 export async function baza(tab = 'przepisy', q = '') {
   const head = `<h1 class="pagetitle">Baza wiedzy</h1>${baseTabs(tab)}`;
   if (tab === 'przepisy') {
@@ -307,7 +307,7 @@ const TOOLS = {
 };
 export function narzedzia() {
   return { title: 'Narzędzia', html: `<h1 class="pagetitle">Narzędzia</h1><p class="lead">Kalkulatory liczą na stawkach z kursu (stan IX 2026). Wyniki są orientacyjne – przed podaniem klientowi sprawdź aktualne przepisy.</p>
-<div class="grid c3" style="margin-top:16px">${Object.entries(TOOLS).map(([k, t]) => `<a class="card toolcard" href="#/narzedzia/${k}"><span class="ic">${icon(t.icon)}</span><b>${t.name}</b><span>${t.desc}</span></a>`).join('')}<a class="card toolcard" href="#/narzedzia/listy"><span class="ic">${icon('check')}</span><b>Checklisty</b><span>Listy kontrolne z kursu: start biura, prezentacja, transakcja.</span></a></div>` };
+<div class="grid c3" style="margin-top:16px">${Object.entries(TOOLS).map(([k, t]) => `<a class="card toolcard" href="#/narzedzia/${k}"><span class="ic">${icon(t.icon)}</span><b>${t.name}</b><span>${t.desc}</span></a>`).join('')}<a class="card toolcard" href="#/narzedzia/listy"><span class="ic">${icon('check')}</span><b>Checklisty</b><span>Listy kontrolne z kursu: start biura, prezentacja, transakcja.</span></a><a class="card toolcard" href="#/narzedzia/wzory"><span class="ic">${icon('sheet')}</span><b>Wzory dokumentów</b><span>Umowy pośrednictwa, karta AML, klauzula RODO, protokoły – do wypełnienia, skopiowania i wydruku.</span></a><a class="card toolcard" href="#/narzedzia/start"><span class="ic">${icon('road')}</span><b>Start biura</b><span>Lista kontrolna otwarcia biura: OC, AML, rejestracja, podatki – z odnośnikami do przepisów.</span></a></div>` };
 }
 export async function narzedzie(id) {
   if (id === 'listy') return listy();
