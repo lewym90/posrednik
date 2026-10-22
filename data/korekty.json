@@ -225,5 +225,129 @@
    }
   ],
   "date": "22.10.2026"
+ },
+ {
+  "id": "k14",
+  "ch": 26,
+  "sec": "26.2",
+  "kind": "potwierdzone",
+  "title": "AML – wybrane artykuły ustawy",
+  "text": "Sprawdzone w tekście ustawy z 1.03.2018 r. (stan prawny sierpień 2026): art. 27 ust. 3, art. 35, art. 41 ust. 1 (odmowa nawiązania relacji / wykonania transakcji, zakończenie relacji), art. 49, art. 50 ust. 1–2, art. 53 ust. 1, art. 74 ust. 2, art. 86 ust. 1–2 oraz art. 2 pkt 18 – zgodne z książką. Wstrzymanie transakcji opisuje art. 86 ust. 4 (książka odwołuje się ogólnie do „zasad art. 86”). Nie potwierdzono osobno: progu 25% dla beneficjenta rzeczywistego, art. 52 (szkolenia), art. 147 (kary) i ustawy o sankcjach z 13.04.2022 – przed poleganiem sprawdź je w aktualnym tekście.",
+  "srcs": [
+   {
+    "n": "Ustawa o przeciwdziałaniu praniu pieniędzy – art. 41 (lexlege.pl)",
+    "u": "https://lexlege.pl/przeciwdz-praniu-pien/art-41/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k15",
+  "ch": 27,
+  "sec": "27.6",
+  "kind": "potwierdzone",
+  "title": "RODO – zgłoszenie naruszenia w 72 godziny",
+  "text": "Art. 33 ust. 1 RODO: zgłoszenie organowi nadzorczemu „bez zbędnej zwłoki – w miarę możliwości, nie później niż w terminie 72 godzin po stwierdzeniu naruszenia”; brak obowiązku, gdy naruszenie raczej nie powoduje ryzyka naruszenia praw lub wolności osób. Zgodne z książką. Źródło: wyłącznie jedna strona z tekstem RODO (poziom potwierdzenia: dodatkowe źródło wtórne).",
+  "srcs": [
+   {
+    "n": "Art. 33 RODO (gdpr-text.com)",
+    "u": "https://gdpr-text.com/pl/read/article-33/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k16",
+  "ch": 27,
+  "sec": "27.8",
+  "kind": "potwierdzone",
+  "title": "RODO – maksymalne kary (art. 83)",
+  "text": "Progi administracyjnych kar pieniężnych: do 10 000 000 euro lub do 2% oraz do 20 000 000 euro lub do 4% całkowitego rocznego światowego obrotu – zgodne z książką. Źródło wtórne (poradnikprzedsiebiorcy.pl); numeru artykułu i reguły „kwota wyższa” strona nie podaje, wynikają one z art. 83 ust. 4–5 RODO.",
+  "srcs": [
+   {
+    "n": "Odpowiedzialność za naruszenie przepisów RODO",
+    "u": "https://poradnikprzedsiebiorcy.pl/-odpowiedzialnosc-za-naruszenie-przepisow-rodo"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k17",
+  "ch": 4,
+  "sec": "4.4",
+  "kind": "potwierdzone",
+  "title": "PIT 2026 – skala i podatek liniowy",
+  "text": "Skala: 12% do 120 000 zł, 32% od nadwyżki; kwota zmniejszająca podatek 3 600 zł (odpowiada 30 000 zł wolnych od podatku); liniowy 19% bez kwoty wolnej. Zgodne z książką. Źródło wtórne (pitax.pl) – zweryfikuj w tekście ustawy o PIT przed użyciem w umowie lub opinii.",
+  "srcs": [
+   {
+    "n": "PIT – progi podatkowe (pitax.pl)",
+    "u": "https://www.pitax.pl/wiedza/aktualnosci/pit-progi-podatkowe-w-rozliczeniu-skali-podatkowej/"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k18",
+  "ch": 17,
+  "sec": "17.6",
+  "kind": "potwierdzone",
+  "title": "Ryczałt od najmu prywatnego",
+  "text": "8,5% do 100 000 zł przychodów rocznie, 12,5% od nadwyżki; PIT-28 do 30 kwietnia. Zgodne z książką. Źródło wtórne (fakturownia.pl).",
+  "srcs": [
+   {
+    "n": "Ryczałt od najmu (fakturownia.pl)",
+    "u": "https://fakturownia.pl/firma-w-praktyce/podatek-ryczalt-od-najmu-co-warto-wiedziec"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k19",
+  "ch": 17,
+  "sec": "17.5",
+  "kind": "potwierdzone",
+  "title": "Ulga mieszkaniowa – termin 3 lat i status zmian",
+  "text": "Wydatki na własne cele mieszkaniowe: do 3 lat od końca roku podatkowego sprzedaży (art. 21 ust. 1 pkt 131 ustawy o PIT; pit.pl) – zgodne z książką. Starszy artykuł Infor.pl podający 2 lata jest nieaktualny. Projektowane ograniczenia ulgi (UD 116) zostały wycofane przez MF – prawo.pl, 22.08.2026; obowiązują dotychczasowe zasady. PIT-39 do 30 kwietnia.",
+  "srcs": [
+   {
+    "n": "Ulga mieszkaniowa zostaje (prawo.pl, 22.08.2026)",
+    "u": "https://www.prawo.pl/podatki/ulga-mieszkaniowa-czy-bedzie-limit-mieszkan,1550519.html"
+   },
+   {
+    "n": "Termin 3 lat (pit.pl)",
+    "u": "https://www.pit.pl/aktualnosci/sprzedaj-mieszkanie-i-rozlicz-w-pit-ulge-na-zakup-kolejnego-przez-3-lata-976749"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k20",
+  "ch": 17,
+  "sec": "17.7",
+  "kind": "potwierdzone",
+  "title": "Spadki i darowizny – SD-Z2 i grupy",
+  "text": "Zgłoszenie SD-Z2 w 6 miesięcy; kwoty wolne: I grupa 36 120 zł, II grupa 27 090 zł, III grupa 5 733 zł – zgodne z książką. Źródło wtórne (poradnikprzedsiebiorcy.pl); stawek progresywnych nie potwierdzono osobno.",
+  "srcs": [
+   {
+    "n": "Formularz SD-Z2 (poradnikprzedsiebiorcy.pl)",
+    "u": "https://poradnikprzedsiebiorcy.pl/-formularz-sd-z2-wzor-z-szerokim-omowieniem"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k21",
+  "ch": 17,
+  "sec": "17.4",
+  "kind": "potwierdzone",
+  "title": "VAT 8% – limity 150 m² i 300 m²",
+  "text": "Art. 41 ust. 12b ustawy o VAT: z budownictwa objętego społecznym programem mieszkaniowym wyłączone są domy jednorodzinne powyżej 300 m² i lokale mieszkalne powyżej 150 m²; ust. 12c – proporcja przy przekroczeniu. Zgodne z książką. Źródło wtórne z 2022 r. (Infor.pl) – sprawdź brzmienie w aktualnym tekście ustawy.",
+  "srcs": [
+   {
+    "n": "Stawka 8% w budownictwie mieszkaniowym (Infor.pl)",
+    "u": "https://ksiegowosc.infor.pl/podatki/vat/stawki-vat/5599477,preferencyjna-stawka-vat-8-w-budownictwie-mieszkaniowym-a-powierzchni.html"
+   }
+  ],
+  "date": "22.10.2026"
  }
 ]

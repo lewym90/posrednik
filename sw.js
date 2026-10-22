@@ -1,4 +1,4 @@
-const VERSION = 'ap-v5';
+const VERSION = 'ap-v6';
 const ASSETS = ["css/app.css", "data/akty.json", "data/book.json", "data/checklisty.json", "data/fakty.json", "data/korekty.json", "data/przepisy.json", "data/slownik.json", "data/test.json", "data/zrodla.json", "fonts/literata-latin-ext-wght-italic.woff2", "fonts/literata-latin-ext-wght-normal.woff2", "fonts/literata-latin-wght-italic.woff2", "fonts/literata-latin-wght-normal.woff2", "fonts/schibsted-grotesk-latin-ext-wght-normal.woff2", "fonts/schibsted-grotesk-latin-wght-normal.woff2", "icons/apple-touch-icon.png", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/icon.svg", "index.html", "js/app.js", "js/calc.js", "js/store.js", "js/util.js", "js/views.js", "manifest.webmanifest", "tools/mksw.py", "./"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
