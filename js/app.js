@@ -1,6 +1,7 @@
 import { $, $$, esc, strip, fold, icon, getJSON, debounce, safe } from './util.js';
 import { applyPrefs, onChange } from './store.js';
 import * as V from './views.js';
+import * as U from './ustawy.js';
 
 applyPrefs();
 const NAV = [['', 'Start', 'home'], ['kurs', 'Kurs', 'book'], ['baza', 'Baza', 'db'], ['cwicz', 'Ćwicz', 'quiz'], ['narzedzia', 'Narzędzia', 'tool'], ['droga', 'Droga', 'road', 1], ['ustawienia', 'Ustawienia', 'gear', 1]];
@@ -12,7 +13,7 @@ const mq = matchMedia('(min-width:1240px)'); const bn = () => $('.bname', nav).h
 const top = $('#topbar'), main = $('#main');
 function setTop(title, crumb) {
   top.innerHTML = `<button class="iconbtn" id="back" aria-label="Wstecz" ${location.hash.split('/').length > 2 ? '' : 'hidden'}>${icon('back')}</button><h1>${crumb ? `<span class="crumb">${esc(crumb)}</span>` : ''}${esc(title)}</h1><button class="iconbtn" id="sbtn" aria-label="Szukaj w całej aplikacji">${icon('search')}</button><a class="iconbtn" href="#/ustawienia" aria-label="Ustawienia">${icon('gear')}</a>`;
-  $('#back', top).onclick = () => { const p = location.hash.replace(/^#\//, '').split('/'); if (p.length > 1) location.hash = '#/' + p.slice(0, p[0] === 'kurs' || p[0] === 'baza' ? 1 : p.length - 1).join('/'); else history.back(); };
+  $('#back', top).onclick = () => { const p = location.hash.replace(/^#\//, '').split('/'); if (p.length > 1) location.hash = '#/' + p.slice(0, p[0] === 'kurs' || (p[0] === 'baza' && p[1] !== 'ustawy') ? 1 : p.length - 1).join('/'); else history.back(); };
   $('#sbtn', top).onclick = openSearch;
 }
 
@@ -25,7 +26,7 @@ async function route() {
   try {
     if (area === '') r = await V.start();
     else if (area === 'kurs') r = p[1] ? await V.kursChapter(p[1], p[2]) : await V.kursList();
-    else if (area === 'baza') r = await V.baza(p[1], new URLSearchParams(query).get('q') || '');
+    else if (area === 'baza') r = (!p[1] || p[1] === 'ustawy') ? (p[2] ? await U.ustawa(p[2], p[3], p[4]) : await U.ustawyList()) : await V.baza(p[1], new URLSearchParams(query).get('q') || '');
     else if (area === 'cwicz') r = p[1] === 'test' ? await V.test(p[2]) : p[1] === 'fiszki' ? await V.fiszki(p[2]) : await V.cwiczHub();
     else if (area === 'narzedzia') r = p[1] ? await V.narzedzie(p[1]) : V.narzedzia();
     else if (area === 'droga') r = await V.droga();

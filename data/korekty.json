@@ -215,13 +215,13 @@
   "id": "k13",
   "ch": 4,
   "sec": "4.3",
-  "kind": "potwierdzone",
-  "title": "OC pośrednika – rozporządzenie",
-  "text": "Tekst rozporządzenia MF z 13.12.2013 (Dz.U. 2013 poz. 1626): § 3 – obowiązek powstaje najpóźniej w dniu poprzedzającym rozpoczęcie czynności; § 4 – min. 25 000 euro na jedno zdarzenie i na wszystkie zdarzenia w okresie ubezpieczenia do 12 miesięcy; przeliczenie po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy. Zgodne z książką.",
+  "kind": "zaktualizowano",
+  "title": "OC pośrednika – właściwe rozporządzenie z 26.04.2019",
+  "text": "Książka (i wcześniejsza wersja aplikacji) powoływała rozporządzenie MF z 13.12.2013 (Dz.U. 2013 poz. 1626). W rejestrze ELI ma ono status „uznany za uchylony” – utraciło moc 1.05.2019 r. na podstawie art. 216 ustawy – Przepisy wprowadzające ustawę – Prawo przedsiębiorców. Obowiązuje rozporządzenie MF z 26.04.2019 r. (Dz.U. 2019 poz. 804, w mocy od 1.05.2019): § 3 – obowiązek ubezpieczenia powstaje najpóźniej w dniu poprzedzającym rozpoczęcie czynności; § 4 – minimalna suma gwarancyjna to równowartość 25 000 euro (na jedno zdarzenie i na wszystkie zdarzenia w okresie ubezpieczenia do 12 miesięcy), przeliczana po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy. Treść liczb jest taka sama jak w książce; zmieniono podstawę prawną.",
   "srcs": [
    {
-    "n": "Tekst rozporządzenia w rejestrze ELI",
-    "u": "https://api.sejm.gov.pl/eli/acts/DU/2013/1626/text.pdf"
+    "n": "Rozporządzenie MF z 26.04.2019 (Dz.U. 2019 poz. 804) w rejestrze ELI",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2019/804/text.pdf"
    }
   ],
   "date": "22.10.2026"
@@ -346,6 +346,59 @@
    {
     "n": "Stawka 8% w budownictwie mieszkaniowym (Infor.pl)",
     "u": "https://ksiegowosc.infor.pl/podatki/vat/stawki-vat/5599477,preferencyjna-stawka-vat-8-w-budownictwie-mieszkaniowym-a-powierzchni.html"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k22",
+  "ch": 2,
+  "sec": "2.4",
+  "kind": "uzupelnienie",
+  "title": "Art. 180a u.g.n. – wymóg niekaralności pośrednika",
+  "text": "W aktualnym tekście jednolitym ustawy o gospodarce nieruchomościami (Dz.U. 2026 poz. 399) działalność pośrednicką może wykonywać osoba fizyczna, która nie została prawomocnie skazana za umyślne przestępstwo m.in. przeciwko działalności instytucji państwowych i samorządu terytorialnego, wymiarowi sprawiedliwości, wiarygodności dokumentów, mieniu, obrotowi gospodarczemu i interesom majątkowym w obrocie cywilnoprawnym, obrotowi pieniędzmi i papierami wartościowymi, za przestępstwo z art. 165a Kodeksu karnego, przestępstwo popełnione w celu osiągnięcia korzyści majątkowej lub osobistej albo umyślne przestępstwo skarbowe (art. 180a ust. 1 pkt 1). W spółce wymóg dotyczy wspólników prowadzących sprawy, osób uprawnionych do reprezentacji i członków organów zarządzających (pkt 2). Ust. 2 rozciąga go na osoby kierujące czynnościami pośrednictwa i na beneficjenta rzeczywistego podmiotu. Książka tego przepisu nie omawia – pełne brzmienie w zakładce Ustawy.",
+  "srcs": [
+   {
+    "n": "Tekst jednolity u.g.n. w rejestrze ELI (Dz.U. 2026 poz. 399)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/399/text.pdf"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k23",
+  "ch": 20,
+  "sec": "20.1",
+  "kind": "zaktualizowano",
+  "title": "Ustawa o prawach konsumenta – nowy tekst jednolity",
+  "text": "Aktualny tekst jednolity ustawy z 30.05.2014 r. o prawach konsumenta to obwieszczenie z 4.09.2026 (Dz.U. 2026 poz. 1244). Wcześniejszy t.j. (Dz.U. 2024 poz. 1796) wygasł. Numer w wykazie aktów zmieniono; zakres przepisów cytowanych w kursie wymaga porównania z nowym tekstem (zakładka Ustawy).",
+  "srcs": [
+   {
+    "n": "Obwieszczenie – t.j. u.p.k. (Dz.U. 2026 poz. 1244)",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/1244/text.pdf"
+   }
+  ],
+  "date": "22.10.2026"
+ },
+ {
+  "id": "k24",
+  "ch": 20,
+  "sec": "20.1",
+  "kind": "uzupelnienie",
+  "title": "Zmiany ogłoszone po tekstach jednolitych (AML, u.g.n.)",
+  "text": "Zakładka Ustawy pokazuje przy każdej ustawie zmiany ogłoszone po jej tekście jednolitym, z dosłownymi fragmentami. Istotne dla pośrednika: (1) u.g.n. art. 10 ust. 2 – zmiana od 31.07.2026 (Dz.U. 2026 poz. 912) oraz art. 93 ust. 4 – od 1.01.2027 (Dz.U. 2026 poz. 875); (2) ustawa AML – od 29.09.2026 zmiana art. 2 ust. 1 pkt 1 (Dz.U. 2026 poz. 1206, dotyczy banków), od 1.01.2027 zmiany art. 129f (rejestr działalności na rzecz spółek lub trustów; poz. 875), od 2.04.2027 zmiana art. 72 ust. 6 pkt 7a – zakres informacji o nieruchomości w transakcjach (Dz.U. 2025 poz. 1669). Fragmenty zmian nie zostały wkomponowane w tekst ustaw; przed zastosowaniem sprawdź zakładkę „Zmiany ogłoszone po tekście jednolitym”.",
+  "srcs": [
+   {
+    "n": "Dz.U. 2025 poz. 1669",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2025/1669/text.pdf"
+   },
+   {
+    "n": "Dz.U. 2026 poz. 875",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/875/text.pdf"
+   },
+   {
+    "n": "Dz.U. 2026 poz. 1206",
+    "u": "https://api.sejm.gov.pl/eli/acts/DU/2026/1206/text.pdf"
    }
   ],
   "date": "22.10.2026"

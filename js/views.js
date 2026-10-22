@@ -93,7 +93,7 @@ export async function start() {
 </div>
 <div class="sectionhead"><h2>Na skróty</h2></div>
 <div class="grid c3">
-  <a class="card toolcard" href="#/baza/przepisy"><span class="ic">${icon('law')}</span><b>Baza przepisów</b><span>Cytaty ustaw z kursu, wyszukiwarka i odnośniki do rozdziałów.</span></a>
+  <a class="card toolcard" href="#/baza/ustawy"><span class="ic">${icon('law')}</span><b>Ustawy – pełne teksty</b><span>Kodeks cywilny, u.g.n., księgi wieczyste i inne – z wyszukiwarką artykułów.</span></a>
   <a class="card toolcard" href="#/narzedzia/koszty"><span class="ic">${icon('tool')}</span><b>Kalkulatory</b><span>Koszty zakupu, prowizja, rata, rentowność najmu, PIT od sprzedaży.</span></a>
   <a class="card toolcard" href="#/baza/akty"><span class="ic">${icon('db')}</span><b>Akty prawne</b><span>Wykaz ustaw i rozporządzeń z adresami publikacji.</span></a>
 </div>`,
@@ -156,7 +156,7 @@ ${c.sources ? `<p class="src"><b>Podstawa:</b> ${safe(c.sources.replace(/^Źród
 }
 
 /* ───────── BAZA ───────── */
-const baseTabs = cur => `<div class="seg" role="tablist">${[['przepisy', 'Przepisy'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
+const baseTabs = cur => `<div class="seg" role="tablist">${[['ustawy', 'Ustawy'], ['przepisy', 'Z kursu'], ['akty', 'Akty prawne'], ['fakty', 'Fakty i stawki'], ['korekty', 'Korekty'], ['slownik', 'Słownik'], ['zrodla', 'Źródła']].map(([k, n]) => `<a href="#/baza/${k}" aria-current="${k === cur}">${n}</a>`).join('')}</div>`;
 export async function baza(tab = 'przepisy', q = '') {
   const head = `<h1 class="pagetitle">Baza wiedzy</h1>${baseTabs(tab)}`;
   if (tab === 'przepisy') {

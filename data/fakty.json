@@ -195,21 +195,17 @@
      "l": "Obowiązkowe OC pośrednika",
      "v": "min. równowartość 25 000 euro",
      "lvl": "A",
-     "ref": "Kurs, rozdz. 2.6; rozp. MF z 13.12.2013",
+     "ref": "Kurs, rozdz. 2.6; rozp. MF z 26.04.2019",
      "ch": 2,
      "sec": "2.6",
      "srcs": [
       {
-       "n": "Rozp. MF z 13.12.2013 (Dz.U. 2013 poz. 1626) – tekst w serwisie Infor",
-       "u": "https://www.infor.pl/akt-prawny/DZU.2013.241.0001626,rozporzadzenie-ministra-finansow-w-sprawie-obowiazkowego-ubezpieczenia-odpowiedzialnosci-cywilnej-posrednika-w-obrocie-nieruchomosciami.html"
-      },
-      {
-       "n": "Tekst rozporządzenia w rejestrze ELI",
-       "u": "https://api.sejm.gov.pl/eli/acts/DU/2013/1626/text.pdf"
+       "n": "Rozp. MF z 26.04.2019 (Dz.U. 2019 poz. 804) – tekst w rejestrze ELI",
+       "u": "https://api.sejm.gov.pl/eli/acts/DU/2019/804/text.pdf"
       }
      ],
      "checked": "22.10.2026",
-     "note": "§ 4 rozporządzenia: min. 25 000 euro dla jednego zdarzenia i łącznie dla wszystkich zdarzeń w okresie ubezpieczenia (do 12 miesięcy); przeliczenie po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy."
+     "note": "§ 4 rozporządzenia: min. równowartość 25 000 euro dla jednego zdarzenia i łącznie dla wszystkich zdarzeń w okresie ubezpieczenia (do 12 miesięcy); przeliczenie po średnim kursie NBP z pierwszego ogłoszenia w roku zawarcia umowy. Rozporządzenie z 13.12.2013 (Dz.U. 2013 poz. 1626) utraciło moc 1.05.2019 r."
     },
     {
      "l": "Licencja zawodowa",
