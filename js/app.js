@@ -2,9 +2,10 @@ import { $, $$, esc, strip, fold, icon, getJSON, debounce, safe } from './util.j
 import { applyPrefs, onChange } from './store.js';
 import * as V from './views.js';
 import * as U from './ustawy.js';
+import * as PR from './procesy.js';
 
 applyPrefs();
-const NAV = [['', 'Start', 'home'], ['kurs', 'Kurs', 'book'], ['baza', 'Baza', 'db'], ['cwicz', 'Ćwicz', 'quiz'], ['narzedzia', 'Narzędzia', 'tool'], ['droga', 'Droga', 'road', 1], ['ustawienia', 'Ustawienia', 'gear', 1]];
+const NAV = [['', 'Start', 'home'], ['kurs', 'Kurs', 'book'], ['baza', 'Baza', 'db'], ['procesy', 'Procesy', 'sheet'], ['cwicz', 'Ćwicz', 'quiz'], ['narzedzia', 'Narzędzia', 'tool'], ['droga', 'Droga', 'road', 1], ['ustawienia', 'Ustawienia', 'gear', 1]];
 const nav = $('#nav');
 nav.innerHTML = `<a class="brand" href="#/" aria-label="Start"><img src="icons/icon.svg" alt="" width="44" height="44"><span class="bname" hidden>Akademia<br>Pośrednika</span></a>` +
   NAV.map(([k, n, i, dsk]) => `<a href="#/${k}" data-k="${k}" ${dsk ? 'class="dsk"' : ''}>${icon(i)}<span>${n}</span></a>`).join('');
@@ -27,6 +28,7 @@ async function route() {
     if (area === '') r = await V.start();
     else if (area === 'kurs') r = p[1] ? await V.kursChapter(p[1], p[2]) : await V.kursList();
     else if (area === 'baza') r = (!p[1] || p[1] === 'ustawy') ? (p[2] ? await U.ustawa(p[2], p[3], p[4]) : await U.ustawyList()) : await V.baza(p[1], new URLSearchParams(query).get('q') || '');
+    else if (area === 'procesy') r = p[1] ? await PR.rodzaj(p[1]) : await PR.lista();
     else if (area === 'cwicz') r = p[1] === 'test' ? await V.test(p[2]) : p[1] === 'fiszki' ? await V.fiszki(p[2]) : await V.cwiczHub();
     else if (area === 'narzedzia') r = p[1] ? await V.narzedzie(p[1]) : V.narzedzia();
     else if (area === 'droga') r = await V.droga();

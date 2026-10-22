@@ -176,6 +176,72 @@
   "amend": 3
  },
  {
+  "id": "pw",
+  "short": "P.w.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 20 lipca 2017 r. - Prawo wodne",
+  "tj": "Dz.U. 2026 poz. 1335",
+  "legal": "2026-09-14",
+  "arts": 588,
+  "kb": 1006,
+  "amend": 0
+ },
+ {
+  "id": "uogrl",
+  "short": "u.o.g.r.l.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 3 lutego 1995 r. o ochronie gruntów rolnych i leśnych.",
+  "tj": "Dz.U. 2024 poz. 82",
+  "legal": "2024-01-16",
+  "arts": 45,
+  "kb": 69,
+  "amend": 3
+ },
+ {
+  "id": "ulasy",
+  "short": "u.o.l.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 28 września 1991 r. o lasach.",
+  "tj": "Dz.U. 2026 poz. 663",
+  "legal": "2026-05-14",
+  "arts": 115,
+  "kb": 122,
+  "amend": 0
+ },
+ {
+  "id": "uop",
+  "short": "u.o.p.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 16 kwietnia 2004 r. o ochronie przyrody",
+  "tj": "Dz.U. 2026 poz. 1315",
+  "legal": "2026-09-05",
+  "arts": 208,
+  "kb": 388,
+  "amend": 0
+ },
+ {
+  "id": "uozoz",
+  "short": "u.o.z.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 23 lipca 2003 r. o ochronie zabytków i opiece nad zabytkami",
+  "tj": "Dz.U. 2024 poz. 1292",
+  "legal": "2024-08-02",
+  "arts": 178,
+  "kb": 221,
+  "amend": 5
+ },
+ {
+  "id": "upr",
+  "short": "u.p.r.",
+  "group": "Grunty, lasy, zabytki, przyroda",
+  "title": "Ustawa z dnia 15 listopada 1984 r. o podatku rolnym.",
+  "tj": "Dz.U. 2025 poz. 1344",
+  "legal": "2025-09-23",
+  "arts": 28,
+  "kb": 44,
+  "amend": 1
+ },
+ {
   "id": "pke",
   "short": "P.k.e.",
   "group": "AML, dane, przedsiębiorca",
